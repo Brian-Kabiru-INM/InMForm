@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21CC43F32F725506007AEC2B /* InMFormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC43F22F725506007AEC2B /* InMFormApp.swift */; };
+		21CC43F52F725506007AEC2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC43F42F725506007AEC2B /* ContentView.swift */; };
+		21CC43F72F725508007AEC2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CC43F62F725508007AEC2B /* Assets.xcassets */; };
+		21CC43FA2F725508007AEC2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CC43F92F725508007AEC2B /* Preview Assets.xcassets */; };
+		21CC44042F725508007AEC2B /* InMFormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC44032F725508007AEC2B /* InMFormTests.swift */; };
+		21CC440E2F725509007AEC2B /* InMFormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC440D2F725509007AEC2B /* InMFormUITests.swift */; };
+		21CC44102F725509007AEC2B /* InMFormUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC440F2F725509007AEC2B /* InMFormUITestsLaunchTests.swift */; };
+		21CC44242F725CCC007AEC2B /* PersonalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC44232F725CCC007AEC2B /* PersonalDetailsView.swift */; };
+		21CC44262F725EC9007AEC2B /* PersonalDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC44252F725EC9007AEC2B /* PersonalDetailsViewModel.swift */; };
+		21CC44282F725EE9007AEC2B /* PersonalDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC44272F725EE9007AEC2B /* PersonalDetailsModel.swift */; };
+		21CC442C2F725F2C007AEC2B /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC442B2F725F2C007AEC2B /* AppTextField.swift */; };
+		21CC442E2F725F3D007AEC2B /* DropdownField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC442D2F725F3D007AEC2B /* DropdownField.swift */; };
+		21CC44302F725F50007AEC2B /* DOBInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC442F2F725F50007AEC2B /* DOBInput.swift */; };
+		21CC44322F725F7A007AEC2B /* RadioSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC44312F725F7A007AEC2B /* RadioSelector.swift */; };
+		21CC44342F725F8F007AEC2B /* AppPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC44332F725F8F007AEC2B /* AppPrimaryButton.swift */; };
+		21CC44362F725FA8007AEC2B /* InfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC44352F725FA8007AEC2B /* InfoCard.swift */; };
+		21CC44422F7287A6007AEC2B /* PersonalDetailsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC44412F7287A6007AEC2B /* PersonalDetailsForm.swift */; };
+		21CC44442F728F2A007AEC2B /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC44432F728F2A007AEC2B /* Validators.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21CC44002F725508007AEC2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21CC43E72F725506007AEC2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21CC43EE2F725506007AEC2B;
+			remoteInfo = InMForm;
+		};
+		21CC440A2F725509007AEC2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21CC43E72F725506007AEC2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21CC43EE2F725506007AEC2B;
+			remoteInfo = InMForm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21CC43EF2F725506007AEC2B /* InMForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InMForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CC43F22F725506007AEC2B /* InMFormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMFormApp.swift; sourceTree = "<group>"; };
+		21CC43F42F725506007AEC2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		21CC43F62F725508007AEC2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21CC43F92F725508007AEC2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21CC43FF2F725508007AEC2B /* InMFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InMFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CC44032F725508007AEC2B /* InMFormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMFormTests.swift; sourceTree = "<group>"; };
+		21CC44092F725509007AEC2B /* InMFormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InMFormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CC440D2F725509007AEC2B /* InMFormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMFormUITests.swift; sourceTree = "<group>"; };
+		21CC440F2F725509007AEC2B /* InMFormUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMFormUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		21CC44232F725CCC007AEC2B /* PersonalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsView.swift; sourceTree = "<group>"; };
+		21CC44252F725EC9007AEC2B /* PersonalDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewModel.swift; sourceTree = "<group>"; };
+		21CC44272F725EE9007AEC2B /* PersonalDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsModel.swift; sourceTree = "<group>"; };
+		21CC442B2F725F2C007AEC2B /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		21CC442D2F725F3D007AEC2B /* DropdownField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownField.swift; sourceTree = "<group>"; };
+		21CC442F2F725F50007AEC2B /* DOBInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOBInput.swift; sourceTree = "<group>"; };
+		21CC44312F725F7A007AEC2B /* RadioSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioSelector.swift; sourceTree = "<group>"; };
+		21CC44332F725F8F007AEC2B /* AppPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPrimaryButton.swift; sourceTree = "<group>"; };
+		21CC44352F725FA8007AEC2B /* InfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCard.swift; sourceTree = "<group>"; };
+		21CC44412F7287A6007AEC2B /* PersonalDetailsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsForm.swift; sourceTree = "<group>"; };
+		21CC44432F728F2A007AEC2B /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21CC43EC2F725506007AEC2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CC43FC2F725508007AEC2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CC44062F725509007AEC2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21CC43E62F725506007AEC2B = {
+			isa = PBXGroup;
+			children = (
+				21CC43F12F725506007AEC2B /* InMForm */,
+				21CC44022F725508007AEC2B /* InMFormTests */,
+				21CC440C2F725509007AEC2B /* InMFormUITests */,
+				21CC43F02F725506007AEC2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21CC43F02F725506007AEC2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21CC43EF2F725506007AEC2B /* InMForm.app */,
+				21CC43FF2F725508007AEC2B /* InMFormTests.xctest */,
+				21CC44092F725509007AEC2B /* InMFormUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21CC43F12F725506007AEC2B /* InMForm */ = {
+			isa = PBXGroup;
+			children = (
+				21CC44212F725BBE007AEC2B /* Extensions */,
+				21CC441F2F725B93007AEC2B /* Utils */,
+				21CC441E2F725B7E007AEC2B /* Components */,
+				21CC441C2F725B54007AEC2B /* Forms */,
+				21CC43F42F725506007AEC2B /* ContentView.swift */,
+				21CC43F22F725506007AEC2B /* InMFormApp.swift */,
+				21CC43F62F725508007AEC2B /* Assets.xcassets */,
+				21CC43F82F725508007AEC2B /* Preview Content */,
+			);
+			path = InMForm;
+			sourceTree = "<group>";
+		};
+		21CC43F82F725508007AEC2B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				21CC43F92F725508007AEC2B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21CC44022F725508007AEC2B /* InMFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				21CC44032F725508007AEC2B /* InMFormTests.swift */,
+			);
+			path = InMFormTests;
+			sourceTree = "<group>";
+		};
+		21CC440C2F725509007AEC2B /* InMFormUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21CC440D2F725509007AEC2B /* InMFormUITests.swift */,
+				21CC440F2F725509007AEC2B /* InMFormUITestsLaunchTests.swift */,
+			);
+			path = InMFormUITests;
+			sourceTree = "<group>";
+		};
+		21CC441C2F725B54007AEC2B /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				21CC441D2F725B69007AEC2B /* PersonalDetails */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		21CC441D2F725B69007AEC2B /* PersonalDetails */ = {
+			isa = PBXGroup;
+			children = (
+				21CC44232F725CCC007AEC2B /* PersonalDetailsView.swift */,
+				21CC44252F725EC9007AEC2B /* PersonalDetailsViewModel.swift */,
+				21CC44272F725EE9007AEC2B /* PersonalDetailsModel.swift */,
+				21CC44412F7287A6007AEC2B /* PersonalDetailsForm.swift */,
+			);
+			path = PersonalDetails;
+			sourceTree = "<group>";
+		};
+		21CC441E2F725B7E007AEC2B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				21CC442B2F725F2C007AEC2B /* AppTextField.swift */,
+				21CC442D2F725F3D007AEC2B /* DropdownField.swift */,
+				21CC442F2F725F50007AEC2B /* DOBInput.swift */,
+				21CC44312F725F7A007AEC2B /* RadioSelector.swift */,
+				21CC44332F725F8F007AEC2B /* AppPrimaryButton.swift */,
+				21CC44352F725FA8007AEC2B /* InfoCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		21CC441F2F725B93007AEC2B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				21CC44202F725BA7007AEC2B /* Validators */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		21CC44202F725BA7007AEC2B /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				21CC44432F728F2A007AEC2B /* Validators.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		21CC44212F725BBE007AEC2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21CC43EE2F725506007AEC2B /* InMForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21CC44132F725509007AEC2B /* Build configuration list for PBXNativeTarget "InMForm" */;
+			buildPhases = (
+				21CC43EB2F725506007AEC2B /* Sources */,
+				21CC43EC2F725506007AEC2B /* Frameworks */,
+				21CC43ED2F725506007AEC2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InMForm;
+			productName = InMForm;
+			productReference = 21CC43EF2F725506007AEC2B /* InMForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21CC43FE2F725508007AEC2B /* InMFormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21CC44162F725509007AEC2B /* Build configuration list for PBXNativeTarget "InMFormTests" */;
+			buildPhases = (
+				21CC43FB2F725508007AEC2B /* Sources */,
+				21CC43FC2F725508007AEC2B /* Frameworks */,
+				21CC43FD2F725508007AEC2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21CC44012F725508007AEC2B /* PBXTargetDependency */,
+			);
+			name = InMFormTests;
+			productName = InMFormTests;
+			productReference = 21CC43FF2F725508007AEC2B /* InMFormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21CC44082F725509007AEC2B /* InMFormUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21CC44192F725509007AEC2B /* Build configuration list for PBXNativeTarget "InMFormUITests" */;
+			buildPhases = (
+				21CC44052F725509007AEC2B /* Sources */,
+				21CC44062F725509007AEC2B /* Frameworks */,
+				21CC44072F725509007AEC2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21CC440B2F725509007AEC2B /* PBXTargetDependency */,
+			);
+			name = InMFormUITests;
+			productName = InMFormUITests;
+			productReference = 21CC44092F725509007AEC2B /* InMFormUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21CC43E72F725506007AEC2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					21CC43EE2F725506007AEC2B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					21CC43FE2F725508007AEC2B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 21CC43EE2F725506007AEC2B;
+					};
+					21CC44082F725509007AEC2B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 21CC43EE2F725506007AEC2B;
+					};
+				};
+			};
+			buildConfigurationList = 21CC43EA2F725506007AEC2B /* Build configuration list for PBXProject "InMForm" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21CC43E62F725506007AEC2B;
+			productRefGroup = 21CC43F02F725506007AEC2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21CC43EE2F725506007AEC2B /* InMForm */,
+				21CC43FE2F725508007AEC2B /* InMFormTests */,
+				21CC44082F725509007AEC2B /* InMFormUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21CC43ED2F725506007AEC2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CC43FA2F725508007AEC2B /* Preview Assets.xcassets in Resources */,
+				21CC43F72F725508007AEC2B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CC43FD2F725508007AEC2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CC44072F725509007AEC2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21CC43EB2F725506007AEC2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CC44322F725F7A007AEC2B /* RadioSelector.swift in Sources */,
+				21CC43F52F725506007AEC2B /* ContentView.swift in Sources */,
+				21CC44242F725CCC007AEC2B /* PersonalDetailsView.swift in Sources */,
+				21CC44282F725EE9007AEC2B /* PersonalDetailsModel.swift in Sources */,
+				21CC43F32F725506007AEC2B /* InMFormApp.swift in Sources */,
+				21CC44342F725F8F007AEC2B /* AppPrimaryButton.swift in Sources */,
+				21CC442C2F725F2C007AEC2B /* AppTextField.swift in Sources */,
+				21CC44362F725FA8007AEC2B /* InfoCard.swift in Sources */,
+				21CC44442F728F2A007AEC2B /* Validators.swift in Sources */,
+				21CC44262F725EC9007AEC2B /* PersonalDetailsViewModel.swift in Sources */,
+				21CC442E2F725F3D007AEC2B /* DropdownField.swift in Sources */,
+				21CC44302F725F50007AEC2B /* DOBInput.swift in Sources */,
+				21CC44422F7287A6007AEC2B /* PersonalDetailsForm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CC43FB2F725508007AEC2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CC44042F725508007AEC2B /* InMFormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21CC44052F725509007AEC2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CC440E2F725509007AEC2B /* InMFormUITests.swift in Sources */,
+				21CC44102F725509007AEC2B /* InMFormUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21CC44012F725508007AEC2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21CC43EE2F725506007AEC2B /* InMForm */;
+			targetProxy = 21CC44002F725508007AEC2B /* PBXContainerItemProxy */;
+		};
+		21CC440B2F725509007AEC2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21CC43EE2F725506007AEC2B /* InMForm */;
+			targetProxy = 21CC440A2F725509007AEC2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21CC44112F725509007AEC2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21CC44122F725509007AEC2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21CC44142F725509007AEC2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InMForm/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.InMForm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21CC44152F725509007AEC2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InMForm/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.InMForm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21CC44172F725509007AEC2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.InMFormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InMForm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InMForm";
+			};
+			name = Debug;
+		};
+		21CC44182F725509007AEC2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.InMFormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InMForm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InMForm";
+			};
+			name = Release;
+		};
+		21CC441A2F725509007AEC2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.InMFormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InMForm;
+			};
+			name = Debug;
+		};
+		21CC441B2F725509007AEC2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.InMFormUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InMForm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21CC43EA2F725506007AEC2B /* Build configuration list for PBXProject "InMForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CC44112F725509007AEC2B /* Debug */,
+				21CC44122F725509007AEC2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21CC44132F725509007AEC2B /* Build configuration list for PBXNativeTarget "InMForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CC44142F725509007AEC2B /* Debug */,
+				21CC44152F725509007AEC2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21CC44162F725509007AEC2B /* Build configuration list for PBXNativeTarget "InMFormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CC44172F725509007AEC2B /* Debug */,
+				21CC44182F725509007AEC2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21CC44192F725509007AEC2B /* Build configuration list for PBXNativeTarget "InMFormUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CC441A2F725509007AEC2B /* Debug */,
+				21CC441B2F725509007AEC2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21CC43E72F725506007AEC2B /* Project object */;
+}
