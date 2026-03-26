@@ -1,6 +1,6 @@
 # **InMform**
 
-**InMform** is a SwiftUI application that replicates InM onboarding form, reusable components, and full validation logic — all structured using the **MVVM architecture pattern**.  
+**InMform** is a SwiftUI application that replicates InM onboarding form, reusable components, and full validation logic - all structured using the **MVVM architecture pattern**.  
 
 ***
 
