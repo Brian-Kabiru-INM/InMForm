@@ -37,7 +37,7 @@ Each is reusable and configurable across onboarding screens.
 
 The project follows a clean MVVM structure:
 
-*   **Models** store structured personal data
+*   **Models** store structured personal data - not yet
 *   **ViewModels** handle validation, business logic, and publish screen updates
 *   **Views** focus solely on UI composition and state rendering
 
