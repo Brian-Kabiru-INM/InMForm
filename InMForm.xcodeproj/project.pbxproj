@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21A4EA0C2F8645B70025D375 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A4EA0B2F8645B70025D375 /* LoginForm.swift */; };
 		21CC43F32F725506007AEC2B /* InMFormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC43F22F725506007AEC2B /* InMFormApp.swift */; };
 		21CC43F52F725506007AEC2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC43F42F725506007AEC2B /* ContentView.swift */; };
 		21CC43F72F725508007AEC2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CC43F62F725508007AEC2B /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21A4EA0B2F8645B70025D375 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
 		21CC43EF2F725506007AEC2B /* InMForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InMForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CC43F22F725506007AEC2B /* InMFormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMFormApp.swift; sourceTree = "<group>"; };
 		21CC43F42F725506007AEC2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21A4EA0A2F8621CE0025D375 /* LoginDetails */ = {
+			isa = PBXGroup;
+			children = (
+				21A4EA0B2F8645B70025D375 /* LoginForm.swift */,
+			);
+			path = LoginDetails;
+			sourceTree = "<group>";
+		};
 		21CC43E62F725506007AEC2B = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 		21CC441C2F725B54007AEC2B /* Forms */ = {
 			isa = PBXGroup;
 			children = (
+				21A4EA0A2F8621CE0025D375 /* LoginDetails */,
 				21CC441D2F725B69007AEC2B /* PersonalDetails */,
 			);
 			path = Forms;
@@ -349,6 +360,7 @@
 				21CC44442F728F2A007AEC2B /* Validators.swift in Sources */,
 				21CC44262F725EC9007AEC2B /* PersonalDetailsViewModel.swift in Sources */,
 				21CC442E2F725F3D007AEC2B /* DropdownField.swift in Sources */,
+				21A4EA0C2F8645B70025D375 /* LoginForm.swift in Sources */,
 				21CC44302F725F50007AEC2B /* DOBInput.swift in Sources */,
 				21CC44422F7287A6007AEC2B /* PersonalDetailsForm.swift in Sources */,
 			);

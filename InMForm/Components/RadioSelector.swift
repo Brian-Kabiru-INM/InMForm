@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RadioSelector: View {
     // properties
+    let cyanGreen = Color(red: 0, green: 0.7, blue: 0.7)
     let options: [String]
     @Binding var selected: String
     
@@ -25,7 +26,7 @@ struct RadioSelector: View {
                         Image(systemName: selected == option
                               ? "largecircle.fill.circle"
                               : "circle")
-                        .foregroundColor(selected == option ? .cyan : .gray)
+                        .foregroundColor(selected == option ? cyanGreen : .gray)
                         .font(.system(size: 22))
                         
                         Text(option)

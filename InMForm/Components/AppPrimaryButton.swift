@@ -12,18 +12,26 @@ struct AppPrimaryButton: View {
     let title: String
     let action: () -> Void
     var isEnabled: Bool = true
+    var isLoading: Bool = false
     let cyanGreen = Color(red: 0, green: 0.7, blue: 0.7)
     
     // body
     var body: some View {
         Button(action: {
-            if isEnabled {
+            if isEnabled && !isLoading {
                 action()
             }
         }) {
-            Text(title)
-                .font(.headline)
-                .foregroundColor(.white)
+            ZStack{
+                if isLoading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                } else {
+                    Text(title)
+                        .font(.headline)
+                        .foregroundColor(.white)
+                }
+            }
                 .frame(maxWidth: .infinity)
                 .frame(height: 50)
                 .background(isEnabled ? cyanGreen : Color.gray.opacity(0.5))
@@ -39,10 +47,16 @@ struct AppPrimaryButton_Previews: PreviewProvider {
         VStack(spacing: 20) {
             AppPrimaryButton(title: "Continue",
                              action: {},
-            isEnabled: true)
+                             isEnabled: true,
+                             isLoading: false)
             AppPrimaryButton(title: "Continue",
                              action: {},
-            isEnabled: false)
+                             isEnabled: false,
+                             isLoading: false)
+            AppPrimaryButton(title: "Loading...",
+                             action: {},
+                             isEnabled: true,
+                             isLoading: true)
         }
         .padding()
         .previewLayout(.sizeThatFits)

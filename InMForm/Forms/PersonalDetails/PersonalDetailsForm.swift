@@ -118,6 +118,11 @@ struct PersonalDetailsForm: View {
                              isValid: viewModel.isNationalIDValid,
                              showErrors: viewModel.showErrors
                 )
+                if viewModel.showErrors && viewModel.nationalID.isEmpty {
+                    Text("National ID is required")
+                        .font(.caption)
+                        .foregroundColor(.red)
+                }
             }
             VStack(alignment: .leading, spacing: 8) {
                 Text("Email Address")
@@ -164,7 +169,9 @@ struct PersonalDetailsForm: View {
             AppPrimaryButton(title: "Continue", action: {
                 viewModel.onContinue()
             },
-                             isEnabled: viewModel.showErrors ? viewModel.isFormValid : true
+                             isEnabled: viewModel.showErrors ? viewModel.isFormValid : true,
+                             // isEnabled: !viewModel.isLoading,
+                             isLoading: viewModel.isLoading
             )
             .padding(.top, 12)
         }

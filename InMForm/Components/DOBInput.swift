@@ -12,7 +12,10 @@ struct DOBInput: View {
     @Binding var day: String
     @Binding var month: String
     @Binding var year: String
-    
+
+    var showErrors: Bool = false
+    @State private var isEditing: Bool = false
+    @State private var hasInteracted: Bool = false
     // body
     var body: some View {
         HStack(spacing: 12) {
@@ -22,6 +25,20 @@ struct DOBInput: View {
         }
     }
 }
+    // MARK: - Border Color Logic
+private extension DOBInput {
+            var borderColor: Color {
+                let valid = DateValidator.isValid(day: day, month: month, year: year)
+                
+                if showErrors {
+                    return valid ? .green : .red
+                }
+                if hasInteracted {
+                    return valid ? .green : .red
+                }
+                return Color.gray.opacity(0.5)
+            }
+        }
 // reusable dateBox
 private extension DOBInput {
     func dateBox(text: Binding<String>, placeholder: String, maxLength: Int) -> some View {

@@ -30,6 +30,7 @@ class PersonalDetailsViewModel: ObservableObject {
     @Published var isEmailValid: Bool? = nil
     @Published var isPhoneValid: Bool? = nil
     @Published var showErrors: Bool = false
+    @Published var isLoading: Bool = false
     
     var isFormValid: Bool {
         return
@@ -91,6 +92,14 @@ extension PersonalDetailsViewModel {
 extension PersonalDetailsViewModel {
     func onContinue() {
         showErrors = true
-        let model = PersonalDetailsModel()
+        if !isFormValid {
+            return
+        }
+        isLoading = true
+        DispatchQueue.main.asyncAfter(deadline: .now()+5) {
+            self.isLoading = false
+            self.showErrors = true
+        }
+       // let model = PersonalDetailsModel()
     }
 }
