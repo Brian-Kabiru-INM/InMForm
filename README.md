@@ -106,3 +106,7 @@ open InMform.xcodeproj
 ```
 
 Run on **iOS 16+**
+## Screenshots
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 Pro - 2026-04-24 at 10 11 24" src="https://github.com/user-attachments/assets/61bf3f5c-6712-41ab-9b51-5439620d593f" />
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 Pro - 2026-04-24 at 10 11 28" src="https://github.com/user-attachments/assets/e1af41b7-6b2c-4527-8fe9-b23a1afbfb0e" />
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 Pro - 2026-04-24 at 10 11 48" src="https://github.com/user-attachments/assets/9a90baa8-1337-484a-b399-8deeadf113ce" />
